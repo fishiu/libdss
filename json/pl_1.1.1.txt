@@ -1,0 +1,1 @@
+{"success":0,"legend":{"data":["男性用户","女性用户"]},"series":{"data":[{"value":"64610","name":"男性用户"},{"value":"63909","name":"女性用户"}]}}

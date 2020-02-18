@@ -1,0 +1,208 @@
+body {
+    background-color: #F6F6F6;
+}
+
+a {
+    color: #1A1A1A;
+}
+
+a:hover {
+    color: #0084ff;
+}
+
+/*面包屑导航*/
+.breadNav {
+    width: 980px;
+    margin: 0 auto;
+
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+
+    font-size: 12px;
+    color: #8790A4;
+}
+
+.breadNav-link {
+    color: #8790A4;
+}
+
+.breadNav-divide {
+    padding: 0 10px;
+}
+
+/*主要内容*/
+.content {
+    position: relative;
+    /*todo !*/
+    width: 966px;
+    margin: 0 auto;
+    padding: 7px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(26, 26, 26, 0.098) 0 1px 3px 0;
+}
+
+.main-title {
+    height: 50px;
+    line-height: 50px;
+    margin: 7px 650px 7px 7px;
+    padding: 0 10px 0 15px;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #1A1A1A;
+
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-title span {
+    padding-right: 5px;
+}
+
+.main-title i {
+    color: #0084ff;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/*下拉内容*/
+.drop-content {
+    transition: height 0.3s, visibility 0.3s;
+    overflow: hidden;
+    /*height: auto;*/
+    /*height: 123px;*/
+    /*margin: 7px 0 7px 0;*/
+}
+
+.invisible {
+    visibility: hidden;
+    height: 0;
+}
+
+.intro {
+    margin: 0 7px 0 7px;
+    height: 20px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #8790A4;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.drop-item {
+    width: 282px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px 0 16px;
+    margin: 7px 7px 7px 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    color: #1A1A1A;
+
+    background-color: #F6F6F6;
+
+    border-radius: 7px;
+}
+
+.drop-item span {
+    padding-right: 18px;
+}
+
+.drop-item:hover {
+    transition: background-color 0.5s, color 0.2s;
+    background-color: #0084ff;
+    color: #FFFFFF;
+}
+
+
+
+
+.small-chart-box {
+    margin-top: 7px;
+}
+
+.small-chart {
+    --duration: 0.3s;
+    width: 308px;
+    height: 308px;
+    margin: 0 7px 14px 7px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    transition: margin-top var(--duration), margin-bottom var(--duration), box-shadow var(--duration);
+}
+
+.content .active, .small-chart:hover {
+    margin-top: -3px;
+    margin-bottom: 7px;
+    box-shadow: rgba(26, 26, 26, 0.2) 0 3px 5px 0;
+}
+
+.content .active {
+    transition: background-color 0.2s;
+    background-color: #EBEBEB;
+}
+
+.small-chart:hover {
+    cursor: pointer;
+}
+
+.big-chart {
+    display: none;
+    margin: 7px;
+    width: 952px;
+
+    background-color: #EBEBEB;
+    border-radius: 5px;
+}
+
+.small-chart-title, .big-chart-title {
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #444444;
+    border-bottom: 2px solid rgba(135, 144, 164, 0.2);
+
+    line-height: 20px;
+    margin: 7px 10px;
+    padding: 0 5px 5px 5px;
+}
+
+.small-chart-body {
+    width: 308px;
+    height: 267px;
+}
+
+.text-content {
+    margin: 0 7px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.text-content img {
+    border-radius: 10px;
+    display: block;
+    height: 400px;
+    margin: 7px 0;
+}
+
+.text-content .text {
+    width: 286px;
+    height: 372px;
+    margin: 7px 7px 7px 28px;
+    padding: 14px 14px 14px 21px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.text-content>i {
+    padding-left: 5px;
+}
+
+

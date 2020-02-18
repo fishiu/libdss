@@ -1,0 +1,1 @@
+{"success":0,"legend":{"data":["numBonum"]},"series":{"data":[{"value":"34795","name":"小于5次"},{"value":"34491","name":"5-15次"},{"value":"4500","name":"15-25次"},{"value":"4500","name":"25-35次"},{"value":"32","name":"大于35次"}]}}

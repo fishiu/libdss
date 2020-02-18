@@ -1,0 +1,1 @@
+{"success":0,"legend":{"data":["少儿书","成人书"]},"series":{"data":[{"value":5531,"name":"少儿书"},{"value":84369,"name":"成人书"}]}}

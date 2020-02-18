@@ -1,0 +1,85 @@
+.content {
+    margin-top: 10px;
+}
+
+.content .title {
+    margin: 30px 55px 40px 55px;
+}
+
+.main-image {
+    width: 600px;
+    height: 480px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.main-image img {
+    display: block;
+    border-radius: 10px;
+}
+
+.main-image h1 {
+    text-align: center;
+    height: 80px;
+    width: 593px;
+    line-height: 80px;
+    color: #444444;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.choose-area {
+    display: flex;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 450px;
+    background-color: #F6F6F6;
+    box-shadow: rgba(26, 26, 26, 0.098) 0px 1px 3px 0px;
+    border-radius: 10px;
+}
+
+.choose-area .btn-box, .choose-title {
+    width: 200px;
+    margin: auto;
+}
+
+.choose-area .choose-title {
+    padding: 30px 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #444444;
+}
+
+.choose-title span {
+    padding-left: 5px;
+}
+
+.choose-area .choose-btn {
+    display: block;
+    margin: 10px 0 60px;
+    width: 190px;
+    height: 60px;
+    /*padding-left: 15px;*/
+
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding-left: 10px;
+
+    background-color: #0084ff;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 0;
+    transition: transform ease-in 0.1s, background-color ease-in 0.1s,  box-shadow ease-in 0.25s;
+}
+
+.choose-area .choose-btn:hover {
+    background-color: #4dc3ff;
+    box-shadow: 0 2px 12px rgba(30, 99, 233, 0.5);
+}

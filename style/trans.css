@@ -1,0 +1,118 @@
+.content {
+    margin-top: 10px;
+}
+
+.content .title {
+    margin: 30px 55px 40px 55px;
+}
+
+.title h1 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.title h1 span {
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+.box-container {
+    margin: 0 3px 50px 3px;
+}
+
+.link-box {
+    background-color: #444444;
+    width: 240px;
+    height: 240px;
+    margin: 0 40px 70px;
+    border-radius: 10px;
+}
+
+.link-box {
+    background-color: #F6F6F6;
+}
+
+.box-title {
+    color: #444444;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 10px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 20px 15px 20px;
+    padding-left: 10px;
+
+    border-bottom: 2px solid #646464;
+}
+
+.link-list li {
+    margin: 5px 20px 5px 45px;
+    line-height: 25px;
+    font-size: 15px;
+    letter-spacing: 15px;
+}
+
+.link-list.adjust li {
+    letter-spacing: 2px;
+}
+
+.link-list a {
+    display: inline-block;
+    padding: 5px 0;
+    color: #444444;
+}
+
+.link-list a:hover {
+    color: #0084ff;
+}
+
+.link-list span {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/*下划线动画*/
+.slide {
+    position: relative;
+}
+
+.slide:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #0084ff;
+    transition: all .3s;
+}
+
+.slide:hover:before {
+    width: 91.5%;
+    left: 0;
+    right: 0;
+}
+
+.adjust .slide:hover:before {
+    width: 99%;
+    left: 0;
+    right: 0;
+}
+
+.nav-slide:before {
+    background: #0084ff;
+    bottom: 0px;
+    height: 3px;
+    transition: all .2s;
+}
+
+.nav-slide:hover:before {
+    width: 100%;
+}
+

@@ -1,0 +1,1 @@
+{"success":0,"legend":{"data":["numBonum"]},"series":{"data":[{"value":"3875976","name":"会议"},{"value":"3528132","name":"展览"},{"value":"1888296","name":"比赛"},{"value":"944148","name":"演出"},{"value":"9540864","name":"讲座"},{"value":"1093224","name":"论坛"}]}}
