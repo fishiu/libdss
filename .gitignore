@@ -1,4 +1,3 @@
 .idea/
 .DS_Store
-php/DB.php
-php/execute.php
+config.ini
