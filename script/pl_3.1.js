@@ -336,7 +336,7 @@ $(document).ready(function () {
 
 
     var small_option = {
-        color: ['#0045E8', '#0084FF', '#22BFFF', '#44EFFF', '#66FFFA', '#88FFE4'],
+        // color: ['#0045E8', '#0084FF', '#22BFFF', '#44EFFF', '#66FFFA', '#88FFE4'],
         tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -426,7 +426,7 @@ $(document).ready(function () {
     };
 
     var big_option = {
-        color: ['#0045E8', '#0084FF', '#22BFFF', '#44EFFF', '#66FFFA', '#88FFE4'],
+        // color: ['#0045E8', '#0084FF', '#22BFFF', '#44EFFF', '#66FFFA', '#88FFE4'],
         tooltip: {
             trigger: 'axis',
             axisPointer: {

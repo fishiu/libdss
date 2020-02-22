@@ -96,8 +96,8 @@ $(document).ready(function () {
 
     var option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -114,7 +114,7 @@ $(document).ready(function () {
         yAxis: [
             {
                 type: 'value',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
@@ -123,7 +123,7 @@ $(document).ready(function () {
             {
                 type: 'category',
                 data: ['讲座', '展览', '演出', '会议', '比赛', '论坛',],
-                axisLabel:{
+                axisLabel: {
                     fontSize: 9
                 }
             }
@@ -223,9 +223,9 @@ $(document).ready(function () {
             show: true,
             left: '10px',
             // top: '50px',
-            orient: 'longitudinal',
-            //获取标签数据
-            data: dataSet.legend.data,
+            orient: 'vertical',
+            // //获取标签数据
+            // data: dataSet.legend.data,
             itemGap: 20
         },
 
@@ -279,9 +279,9 @@ $(document).ready(function () {
             show: true,
             left: '10px',
             // top: '50px',
-            orient: 'longitudinal',
+            orient: 'vertical',
             //获取标签数据
-            data: dataSet.legend.data,
+            // data: dataSet.legend.data,
             itemGap: 20
         },
 
@@ -350,8 +350,8 @@ $(document).ready(function () {
     });
     var small_option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -373,7 +373,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 6
                 },
                 data: ['2017.10', '2017.11', '2017.12', '2018.1', '2018.2', '2018.3', '2018.4', '2018.5', '2018.6', '2018.7', '2018.8', '2018.9', '2018.10', '2018.11', '2018.12', '2019.1', '2019.2', '2019.3', '2019.4']
@@ -450,8 +450,8 @@ $(document).ready(function () {
     });
     var small_option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -473,7 +473,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 6
                 },
                 data: ['2017.10', '2017.11', '2017.12', '2018.1', '2018.2', '2018.3', '2018.4', '2018.5', '2018.6', '2018.7', '2018.8', '2018.9', '2018.10', '2018.11', '2018.12', '2019.1', '2019.2', '2019.3', '2019.4']
@@ -590,8 +590,8 @@ $(document).ready(function () {
     });
     var small_option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -608,7 +608,7 @@ $(document).ready(function () {
         yAxis: [
             {
                 type: 'value',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
@@ -617,7 +617,7 @@ $(document).ready(function () {
             {
                 type: 'category',
                 data: ['<5', '5-15', '15-25', '25-35', '>35'],
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
@@ -705,8 +705,8 @@ $(document).ready(function () {
     });
     var small_option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -723,7 +723,7 @@ $(document).ready(function () {
         yAxis: [
             {
                 type: 'value',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
@@ -732,7 +732,7 @@ $(document).ready(function () {
             {
                 type: 'category',
                 data: ['讲座', '展览', '演出', '会议', '比赛', '论坛',],
-                axisLabel:{
+                axisLabel: {
                     fontSize: 9
                 }
             }
@@ -822,8 +822,8 @@ $(document).ready(function () {
     });
     var small_option = {
         grid: {
-                left: 50
-            },
+            left: 50
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -840,7 +840,7 @@ $(document).ready(function () {
         yAxis: [
             {
                 type: 'value',
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
@@ -849,7 +849,7 @@ $(document).ready(function () {
             {
                 type: 'category',
                 data: ['<4', '4-8', '8-12', '12-16', '16-20', '20-24', '>24'],
-                axisLabel:{
+                axisLabel: {
                     fontSize: 8
                 }
             }
