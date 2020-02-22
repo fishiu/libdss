@@ -2,10 +2,10 @@
 error_reporting(0);
 
 class DB {
-	private $servername = "yourServername";
-	private $username = "yourUsername";
-	private $password = "yourPassword";
-	private $dbname = "yourDbname";
+	private $servername = null;
+	private $username = null;
+	private $password = null;
+	private $dbname = null;
 
     public function __construct()
     {

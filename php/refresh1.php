@@ -5,7 +5,6 @@ require_once 'execute.php';
 $myExecute = new execute();
 
 $myExecute->doExecute('pl_1.1.1.php');
-$myExecute->doExecute('pl_1.1.1.php');
 $myExecute->doExecute('pl_1.1.2.php');
 $myExecute->doExecute('pl_1.1.4.php');
 $myExecute->doExecute('pl_1.1.5.php');
