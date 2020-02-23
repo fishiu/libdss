@@ -2,7 +2,7 @@
 
 网站开发主要分为三部分内容
 
-##### 前端交互
+#### 1. 前端交互
 
 设计思路是初始化展现“仪表盘”方块——每行3个方形块作为图表缩略图的容器，通过Javascript实现
 
@@ -10,36 +10,41 @@
 - 点击本缩略图，大图消失
 - 点击其他缩略图，大图消失，新的大图出现（即同时只能出现一张大图）
 
-##### 后端数据库查询
+#### 2. 后端数据库查询
 
-使用PHP连接数据库进行查询，通过`file_put_contents()`函数，把查询所得数据（按照echarts格式要求）封装成json文件输出至文件夹存放（注：只存放，以方便echarts生成函数调用
+使用PHP连接数据库进行查询，通过`file_put_contents()`函数，把查询所得数据（按照echarts格式要求）封装成json文件（最终方案改为输出为txt，js调用时再将txt文件转换为json）输出至文件夹存放（注：只存放，以方便echarts生成函数调用
 
 网页中会有按钮专门调用所有的图表数据生成PHP进行手动控制的数据更新
 
-##### echarts前端渲染图表
+#### 3. echarts前端渲染图表
 
-使用echarts.js库进行图表生成，主要是配置option参数
-
-## 运行环境配置
-
-1. apache + mysql-5.7.26 + PHP-7.3.7
-2. 使用jQuery和echarts框架进行更方便的Javascript操作和图表创建
+使用`echarts.js`库进行图表生成，主要是配置option参数
 
 ## 代码文档结构说明
 
 以下文件夹按照名称排序
 
-- image：存放图片素材
-- index：存放首页、过渡导航页
-- json：存放所有图表数据，命名为pl_x.y.z.json
-- php：存放所有后端处理数据的php文件。主要以pl_1.1.1.php命名，每一个表对应一个php文件，其中DB.php是数据库连接类，数据库参数在其中修改
-- PL_1～PL_3：这三个文件夹分别存放了解用户、了解资源、了解业务的页面，其中页面以PL_x.y.php的格式命名
-- PA_1～PA_4：这四个文件夹分别存放调整图书分布、购置图书、调整线上资源、系列活动调整的页面，其中页面以PA_x.y.php的格式命名
-- script：用于存放Javascript脚本文件，包括jQuery和echarts的框架、用于实现动态大小图切换的chart-display.js、**每一个页面对应一个**的用于生成图表的pl_x.y.js和pa_x.y.js
-- style：存放样式表文件，reset.css被全局引用，用于消除浏览器默认代理样式造成的样式误差；general.css是普通样式表存放一些全局通用样式比如图表样式；header.css是导航栏样式
-- templates：存放一些通用模板，比如header.html（导航栏模板），通过php的include指令进行引用
-- zlib：存放一些文档，比如数据库文件libdss.sql，设计文稿，框架思维导图
+- `image`：存放图片素材
+- `index`：存放过渡导航页
+- `json`：存放所有图表数据，命名为`pl_x.y.z.json`
+- `php`：存放所有后端处理数据的php文件。主要以`pl_1.1.1.php`命名，每一个表对应一个php文件，其中`DB.php`是数据库连接类，数据库参数在其中修改
+- `PL_1～PL_3`：这三个文件夹分别存放了解用户、了解资源、了解业务的页面，其中页面以`PL_x.y.php`的格式命名
+- `PA_1～PA_4`：这四个文件夹分别存放调整图书分布、购置图书、调整线上资源、系列活动调整的页面，其中页面以PA_x.y.php的格式命名
+- `script`：用于存放Javascript脚本文件，包括jQuery和echarts的框架、用于实现动态大小图切换的`chart-display.js`、**每一个页面对应一个**的用于生成图表的`pl_x.y.js`和`pa_x.y.js`
+- `style`：存放样式表文件，`reset.css`被全局引用，用于消除浏览器默认代理样式造成的样式误差；`general.css`是普通样式表存放一些全局通用样式比如图表样式；`header.css`是导航栏样式
+- `templates`：存放一些通用模板，比如`header.html`（导航栏模板），通过php的include指令进行引用
+- `zlib`：存放一些文档，比如数据库文件`libdss.sql`，设计文稿，框架思维导图
+- `index.php`：网站首页
+- `config.sample.ini`：环境配置文件样例，使用方法见运行说明
+- `README.md`：本说明文档
 
-# 运行说明
+## 部署与运行
 
-需要PHP编译器，打开index文件夹中的index.php即可。
+#### 运行环境
+
+1. `apache + mysql-5.7.26 + PHP-7.3.7`
+2. 使用`jQuery`和`echarts`框架进行更方便的Javascript操作和图表创建
+
+#### 配置文件
+首先需要创建根目录下的`config.ini`配置文件，复制`config.sample.ini`文件并重命名为`config.ini`，包括数据库的各项参数，以及php路径的执行环境和php文件夹的存放位置（由于暂时没有理清楚执行php的路径问题，因此这里采用绝对路径的做法，请见谅！）
+配置好`config.ini`之后，从根目录打开`index.php`即可访问整个网站。
