@@ -4,3 +4,4 @@ config.ini
 .htaccess
 .user.ini
 404.html
+json/*
