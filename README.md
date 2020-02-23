@@ -43,7 +43,7 @@
 #### 运行环境
 
 1. `apache + mysql-5.7.26 + PHP-7.3.7`
-2. 使用`jQuery`和`echarts`框架进行更方便的Javascript操作和图表创建
+2. 使用`jQuery`和`echarts`框架进行更方便的Javascript操作和图表创建（项目文件已经自带相应库，无需
 
 #### 配置文件
 首先需要创建根目录下的`config.ini`配置文件，复制`config.sample.ini`文件并重命名为`config.ini`，包括数据库的各项参数，以及php路径的执行环境和php文件夹的存放位置（由于暂时没有理清楚执行php的路径问题，因此这里采用绝对路径的做法，请见谅！）
