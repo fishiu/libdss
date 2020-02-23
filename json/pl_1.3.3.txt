@@ -1,1 +1,0 @@
-{"success":0,"legend":{"data":["numBoduring"]},"series":{"data":[{"value":"5949","name":"60天"},{"value":"7637","name":"120天"}]}}

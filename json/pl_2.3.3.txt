@@ -1,1 +1,0 @@
-{"success":0,"freqData":[{"name":"<500","value":3},{"name":"500~999","value":7},{"name":"1000~1499","value":4},{"name":"1500~1999","value":1},{"name":"2000~2499","value":1},{"name":"2500~2999","value":2},{"name":"3000~3499","value":1},{"name":">=3500","value":1}]}

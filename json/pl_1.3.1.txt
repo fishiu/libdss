@@ -1,1 +1,0 @@
-{"success":0,"legend":{"data":["讲座","展览","演出","会议","比赛","论坛"]},"series":{"data":[{"value":1,"name":"讲座"},{"value":1,"name":"展览"},{"value":1,"name":"演出"},{"value":1,"name":"会议"},{"value":1,"name":"比赛"},{"value":1,"name":"论坛"}]}}

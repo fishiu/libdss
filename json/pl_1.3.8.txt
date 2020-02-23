@@ -1,1 +1,0 @@
-{"success":0,"legend":{"data":["numduring"]},"series":{"data":[{"value":"95198","name":"小于4小时"},{"value":"0","name":"4-8小时"},{"value":"0","name":"8-12小时"},{"value":"0","name":"12-16小时"},{"value":"0","name":"16-20小时"},{"value":"0","name":"20-24小时"},{"value":"0","name":"24小时以上"}]}}

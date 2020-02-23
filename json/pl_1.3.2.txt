@@ -1,1 +1,0 @@
-{"success":0,"legend":{"data":["actnum"]},"series":{"data":[{"value":"78","name":"讲座"},{"value":"71","name":"展览"},{"value":"38","name":"演出"},{"value":"19","name":"会议"},{"value":"192","name":"比赛"},{"value":"22","name":"论坛"}]}}
