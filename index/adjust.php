@@ -25,7 +25,7 @@
     <!--主要内容区域-->
     <div class="content clearfix">
         <div class="title">
-            <h1><span class="icon-list"></span>服务调整（待部署）</h1>
+            <h1><span class="icon-list"></span>服务调整</h1>
         </div>
         <div class="box-container clearfix">
             <!--第一个盒子-->
@@ -65,6 +65,7 @@
                     <li><a class="slide" href="../PA_4/pa_4.1.php"><span class="icon-point-right"></span>活动情况</a></li>
                     <li><a class="slide" href="../PA_4/pa_4.2.php"><span class="icon-point-right"></span>用户情况</a></li>
                     <li><a class="slide" href="../PA_4/pa_4.3.php"><span class="icon-point-right"></span>图书情况</a></li>
+                    <li><a class="slide" href="../PA_4/pa_4.4.php"><span class="icon-point-right"></span>用户偏好</a></li>
                 </ul>
             </div>
         </div>

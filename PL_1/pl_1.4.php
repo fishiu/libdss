@@ -13,7 +13,7 @@
     <script src="../script/jquery-3.4.1.js"></script>
     <script src="../script/echarts.js"></script>
     <script src="../script/chart-display.js"></script>
-    <script src="../script/pl_1.3.js"></script>
+    <script src="../script/pl_1.4.js"></script>
 </head>
 
 <body>
@@ -52,7 +52,28 @@
                 <div class="drop-item"><span class="icon-pie-chart"></span>用户行为描述</div>
             </a>
         </div>
-        <div class="text-content"><i class="icon-happy"></i> 待建模开发...</div>
+
+        <!--缩略图表-->
+        <div class="fl small-chart-box">
+            <div class="small-chart fl" onclick="choose_chart(1)">
+                <div class="small-chart-title">用户行为偏好聚类分析</div>
+                <div id="small-1" class="small-chart-body"></div>
+            </div>
+            <div class="small-chart fl" onclick="choose_chart(2)">
+                <div class="small-chart-title">聚类结果可视化展示</div>
+                <div id="small-2" class="small-chart-body"></div>
+            </div>
+        </div>
+
+        <!--详细图表-->
+        <div id="big-chart-1" class="big-chart fl">
+            <div class="big-chart-title">用户行为偏好聚类分析</div>
+            <div id="big-1" class="big-chart-body" style="width: 952px;height: 470px;"></div>
+        </div>
+        <div id="big-chart-2" class="big-chart fl">
+            <div class="big-chart-title">聚类结果可视化展示</div>
+            <div id="big-2" class="big-chart-body" style="width: 952px;height: 550px;"></div>
+        </div>
     </div>
 
 </div>

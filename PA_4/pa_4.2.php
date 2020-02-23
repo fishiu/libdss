@@ -49,6 +49,9 @@
             <a href="pa_4.3.php" class="fl">
                 <div class="drop-item"><span class="icon-pie-chart"></span>图书情况</div>
             </a>
+            <a href="pa_4.3.php" class="fl">
+                <div class="drop-item"><span class="icon-pie-chart"></span>用户行为偏好</div>
+            </a>
         </div>
 
         <!--缩略图表-->
