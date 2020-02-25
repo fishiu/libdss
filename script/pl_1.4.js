@@ -10,6 +10,4 @@ $(document).ready(function () {
 
     content = `<img src="../image/user_cluster_graph.png" width="850px" alt="聚类结果图表" style="display: block;margin: 50px auto;">`;
     $("#big-2").html(content);
-
-
 });

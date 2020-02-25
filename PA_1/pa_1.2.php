@@ -13,7 +13,7 @@
     <script src="../script/jquery-3.4.1.js"></script>
     <script src="../script/echarts.js"></script>
     <script src="../script/chart-display.js"></script>
-    <!--<script src="../script/pl_1.3.js"></script>-->
+    <script src="../script/pa_1.2.js"></script>
 </head>
 
 <body>
@@ -53,7 +53,19 @@
             </a>
         </div>
 
-        <div class="text-content"><i class="icon-happy"></i> 待建模开发...</div>
+        <!--缩略图表-->
+        <div class="fl small-chart-box">
+            <div class="small-chart fl" onclick="choose_chart(1)">
+                <div class="small-chart-title">图书二级类目关联规则</div>
+                <div id="small-1" class="small-chart-body"></div>
+            </div>
+        </div>
+
+        <!--详细图表-->
+        <div id="big-chart-1" class="big-chart fl">
+            <div class="big-chart-title">图书二级类目关联规则</div>
+            <div id="big-1" class="big-chart-body" style="width: 952px;height: 470px;"></div>
+        </div>
     </div>
 
 </div>
