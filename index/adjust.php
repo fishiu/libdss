@@ -59,13 +59,14 @@
                 </ul>
             </div>
             <!--第四个盒子-->
-            <div class="link-box resource fl">
+            <div class="link-box resource fl" style="height: 270px;">
                 <h2 class="box-title">系列活动调整</h2>
                 <ul class="link-list"> <!--adjust-->
                     <li><a class="slide" href="../PA_4/pa_4.1.php"><span class="icon-point-right"></span>活动情况</a></li>
                     <li><a class="slide" href="../PA_4/pa_4.2.php"><span class="icon-point-right"></span>用户情况</a></li>
                     <li><a class="slide" href="../PA_4/pa_4.3.php"><span class="icon-point-right"></span>图书情况</a></li>
                     <li><a class="slide" href="../PA_4/pa_4.4.php"><span class="icon-point-right"></span>用户偏好</a></li>
+                    <li><a class="slide" href="../PA_4/pa_4.5.php"><span class="icon-point-right"></span>活动预测</a></li>
                 </ul>
             </div>
         </div>

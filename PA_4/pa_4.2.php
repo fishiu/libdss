@@ -52,6 +52,9 @@
             <a href="pa_4.4.php" class="fl">
                 <div class="drop-item"><span class="icon-pie-chart"></span>用户行为偏好</div>
             </a>
+            <a href="pa_4.5.php" class="fl">
+                <div class="drop-item"><span class="icon-pie-chart"></span>活动预测</div>
+            </a>
         </div>
 
         <!--缩略图表-->
