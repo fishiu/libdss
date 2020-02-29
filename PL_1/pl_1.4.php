@@ -13,7 +13,7 @@
     <script src="../script/jquery-3.4.1.js"></script>
     <script src="../script/echarts.js"></script>
     <script src="../script/chart-display.js"></script>
-    <script src="../script/pa_1.2.js"></script>
+    <script src="../script/pl_1.4.js"></script>
 </head>
 
 <body>
