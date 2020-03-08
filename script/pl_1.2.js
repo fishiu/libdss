@@ -243,7 +243,7 @@ $(document).ready(function () {
         ],
         series: [{
             center: [100, 0],
-            name: '受教育程度分布',
+            name: '距离分布',
             type: 'bar',
             // radius: '60%',
             data: [
