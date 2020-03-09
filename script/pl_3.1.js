@@ -246,7 +246,7 @@ $(document).ready(function () {
             left: '10px',
             top: '50px',
             orient: 'vertical',
-            data: ['1小时', '2小时', '3小时', '4小时'],
+            data: ['1', '2', '3', '4'],
             itemGap: 20,
         },
 
@@ -255,7 +255,7 @@ $(document).ready(function () {
             left: 'center',
             top: 'center',
             style: {
-                text: '单次活动持续时长',
+                text: '单次活动\n持续时长(小时）',
                 textAlign: 'center',
                 font: '14px bold',
                 fill: '#000',
@@ -273,7 +273,7 @@ $(document).ready(function () {
         series: [{
             name: '业务持续时长分布',
             type: 'pie',
-            radius: ['35%', '60%'],
+            radius: ['45%', '70%'],
             toolbox: {
                 // feature 各工具配置项: dataZoom 数据区域缩放;restore 配置项还原;saveAsImage下载为图片;magicType动态类型切换
                 feature: {
