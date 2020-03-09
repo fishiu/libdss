@@ -246,7 +246,7 @@ $(document).ready(function () {
             left: '10px',
             top: '50px',
             orient: 'vertical',
-            data: ['1', '2', '3', '4'],
+            data: ['1小时', '2小时', '3小时', '4小时'],
             itemGap: 20,
         },
 
@@ -255,7 +255,7 @@ $(document).ready(function () {
             left: 'center',
             top: 'center',
             style: {
-                text: '业务持续时长',
+                text: '单次活动持续时长',
                 textAlign: 'center',
                 font: '14px bold',
                 fill: '#000',
