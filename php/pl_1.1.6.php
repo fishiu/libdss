@@ -33,7 +33,7 @@ while ($rowCountUnontimeGender = $resultCountUnontimeGender->fetch_array()) {
 $ontimeData = [
     ['name' => '未逾期用户',
         'value' => $ontimeNum],
-    ['name' => '逾期用户',
+    ['name' => '曾逾期用户',
         'value' => $unontimeNum],
 ];
 

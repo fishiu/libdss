@@ -31,9 +31,9 @@ while ($rowCountUnlendGender = $resultCountUnlendGender->fetch_array()) {
 }
 
 $lendData = [
-    ['name' => '曾借书用户',
+    ['name' => '近期借书用户',
         'value' => $lendNum],
-    ['name' => '未曾借书用户',
+    ['name' => '近期未借书用户',
         'value' => $unlendNum],
 ];
 

@@ -32,9 +32,9 @@ while ($rowCountUnusualGender = $resultCountUnusualGender->fetch_array()) {
 }
 
 $usualData = array(
-    array('name' => '曾到馆用户',
+    array('name' => '近期到馆用户',
         'value' => $usualNum),
-    array('name' => '未曾到馆用户',
+    array('name' => '近期未到馆用户',
         'value' => $unusualNum),
 );
 
