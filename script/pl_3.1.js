@@ -255,7 +255,7 @@ $(document).ready(function () {
             left: 'center',
             top: 'center',
             style: {
-                text: '单次活动\n持续时长(小时）',
+                text: '活动持续\n\n时长(天)',
                 textAlign: 'center',
                 font: '14px bold',
                 fill: '#000',
