@@ -45,7 +45,6 @@
             <div class="link-box resource fl">
                 <h2 class="box-title">了解资源</h2>
                 <ul class="link-list">
-                    <li><a class="slide" href="../PL_2/pl_2.1.php"><span class="icon-point-right"></span>资源概况</a></li>
                     <li><a class="slide" href="../PL_2/pl_2.2.php"><span class="icon-point-right"></span>文献资源</a></li>
                     <li><a class="slide" href="../PL_2/pl_2.3.php"><span class="icon-point-right"></span>电子资源</a></li>
                 </ul>

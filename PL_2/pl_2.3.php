@@ -45,9 +45,6 @@
         </div>
         <div class="drop-content invisible">
             <div class="intro">了解更多资源情况:</div>
-            <a href="pl_2.1.php" class="fl">
-                <div class="drop-item"><span class="icon-pie-chart"></span>资源概况</div>
-            </a>
             <a href="pl_2.3.php" class="fl">
                 <div class="drop-item"><span class="icon-pie-chart"></span>文献资源</div>
             </a>
