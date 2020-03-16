@@ -575,7 +575,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['小于5次', '5-15次', '15-25次', '25-35次', '35次以上'],
+                data: ['小于5次', '5-10次', '11-15次', '16-20次', '21-25次', '26-30次', '31-35次', '大于35次'],
                 axisLabel: {
                     fontSize: 8
                 }
@@ -613,20 +613,14 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['小于5次', '5-15次', '15-25次', '25-35次', '35次以上']
+                data: ['小于5次', '5-10次', '11-15次', '16-20次', '21-25次', '26-30次', '31-35次', '大于35次'],
             }
         ],
         series: [{
             name: '用户借阅频次分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '小于5次'},
-                {value: dataSet.series.data[1].value, name: '5-15次'},
-                {value: dataSet.series.data[2].value, name: '15-25次'},
-                {value: dataSet.series.data[3].value, name: '25-35次'},
-                {value: dataSet.series.data[4].value, name: '35次以上'},
-            ],
+            data: dataSet.series.data,
             barWidth: 40,
             color: '#22BFFF'
         }]
@@ -787,7 +781,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '6-7小时', '7-8小时', '8小时以上'],
+                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '7-8小时', '8小时以上'],
                 axisLabel: {
                     fontSize: 8
                 }
@@ -824,7 +818,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '6-7小时', '7-8小时', '8小时以上'],
+                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '7-8小时', '8小时以上'],
             }
         ],
         series: [{
