@@ -16,6 +16,10 @@ $(document).ready(function () {
 
     var option = {
         color: ['#22BFFF'],
+        tooltip: {
+            show: true,
+            trigger: 'axis'
+        },
         grid: {
             x: 50
         },
@@ -249,6 +253,10 @@ $(document).ready(function () {
 
     var option = {
         color: ['#22BFFF'],
+        tooltip: {
+            show: true,
+            trigger: 'axis'
+        },
         grid: {
             x: 50
         },
@@ -319,6 +327,10 @@ $(document).ready(function () {
 
     var option = {
         color: ['#22BFFF'],
+        tooltip: {
+            show: true,
+            trigger: 'axis'
+        },
         grid: {
             x: 50
         },
@@ -390,6 +402,10 @@ $(document).ready(function () {
 
     var option = {
         color: ['#22BFFF'],
+        tooltip: {
+            show: true,
+            trigger: 'axis'
+        },
         grid: {
             x: 50
         },
