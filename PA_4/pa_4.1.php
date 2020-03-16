@@ -79,7 +79,7 @@
             <div id="big-1" class="big-chart-body" style="width: 952px;height: 500px;"></div>
         </div>
         <div id="big-chart-2" class="big-chart fl">
-            <div class="big-chart-title">单次活动持续时长</div>
+            <div class="big-chart-title">活动持续时长</div>
             <div id="big-2" class="big-chart-body" style="width: 952px;height: 500px;"></div>
         </div>
         <div id="big-chart-3" class="big-chart fl">

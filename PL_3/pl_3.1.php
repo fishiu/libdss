@@ -51,7 +51,7 @@
                 <div id="small-1" class="small-chart-body"></div>
             </div>
             <div class="small-chart fl" onclick="choose_chart(2)">
-                <div class="small-chart-title">单次活动持续时长</div>
+                <div class="small-chart-title">活动持续时长</div>
                 <div id="small-2" class="small-chart-body"></div>
             </div>
             <div class="small-chart fl" onclick="choose_chart(3)">
