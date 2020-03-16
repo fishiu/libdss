@@ -28,7 +28,6 @@ $(document).ready(function () {
             // top: '50px',
             orient: 'horizontal',
             //获取标签数据
-            data: dataSet.legend.data,
             itemGap: 20,
             textStyle: {
                 fontSize: 10
@@ -102,7 +101,7 @@ $(document).ready(function () {
     var option = {
         color: ['#0045E8', '#0084FF', '#22BFFF', '#44EFFF', '#66FFFA', '#88FFE4', '#AAFFDA', '#CCFFDD'],
         grid: {
-            left: 68
+            left: 55
         },
         tooltip: {
             trigger: 'axis',
@@ -111,7 +110,7 @@ $(document).ready(function () {
             }
         },
         legend: {
-            data: ['8-12点到馆', '12-18点到馆', '18-22点到馆'],
+            data: dataSet.legend.data,
             left: 5,
             top: 10,
             itemHeight: 10,
@@ -119,58 +118,30 @@ $(document).ready(function () {
         },
 
         calculable: true,
-        xAxis: {
-            type: 'value',
-            axisLabel: {
-                show: false
-            }
+        yAxis: {
+            type: 'value'
         },
-        yAxis: [
+        xAxis: [
             {
                 type: 'category',
-                data: ['小于5km', '5-20km', '20-40km', '40-60km', '60-80km', '80-100km', '100+km']
+                data: ["5km以下", "5-10km", "10-15km", "15-20km", "20-25km", "25-30km", "30+km"]
             }
         ],
         series: [{
             name: '8-12点到馆',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: 0, name: '小于5km'},
-                {value: dataSet.series.data[0].value, name: '5-20km'},
-                {value: dataSet.series.data[3].value, name: '20-40km'},
-                {value: dataSet.series.data[6].value, name: '40-60km'},
-                {value: dataSet.series.data[9].value, name: '60-80km'},
-                {value: dataSet.series.data[12].value, name: '80-100km'},
-                {value: dataSet.series.data[15].value, name: '100+km'},
-            ]
+            data: dataSet.series['data1']
         }, {
             name: '12-18点到馆',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: 0, name: '小于5km'},
-                {value: dataSet.series.data[1].value, name: '5-20km'},
-                {value: dataSet.series.data[4].value, name: '20-40km'},
-                {value: dataSet.series.data[7].value, name: '40-60km'},
-                {value: dataSet.series.data[10].value, name: '60-80km'},
-                {value: dataSet.series.data[13].value, name: '80-100km'},
-                {value: dataSet.series.data[16].value, name: '100+km'},
-            ]
+            data: dataSet.series['data2']
         }, {
             name: '18-22点到馆',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: 0, name: '小于5km'},
-                {value: dataSet.series.data[2].value, name: '5-20km'},
-                {value: dataSet.series.data[5].value, name: '20-40km'},
-                {value: dataSet.series.data[8].value, name: '40-60km'},
-                {value: dataSet.series.data[11].value, name: '60-80km'},
-                {value: dataSet.series.data[14].value, name: '80-100km'},
-                {value: dataSet.series.data[17].value, name: '100+km'},
-
-            ]
+            data: dataSet.series['data3']
         }]
     };
 
@@ -188,7 +159,6 @@ $(document).ready(function () {
         right: '20px'
     };
 
-    option.xAxis.axisLabel.show = true;
     myChart = echarts.init(document.getElementById('big-2'));
     myChart.setOption(option);
 
@@ -213,9 +183,15 @@ $(document).ready(function () {
 
     var option = {
         grid: {
-            left: 68
+            left: 55
         },
-
+        legend: {
+            data: ['该距离人数'],
+            left: 5,
+            top: 10,
+            itemHeight: 10,
+            itemWidth: 15,
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -229,33 +205,25 @@ $(document).ready(function () {
             }
         },
         calculable: true,
-        xAxis: {
+        yAxis: {
             type: 'value',
-            axisLabel: {
-                show: false
-            }
+            // axisLabel: {
+            //     show: false
+            // }
         },
-        yAxis: [
+        xAxis: [
             {
                 type: 'category',
-                data: ['小于5km', '5-20km', '20-40km', '40-60km', '60-80km', '80-100km', '100+km']
+                data: dataSet.legend.data
             }
         ],
         series: [{
             center: [100, 0],
-            name: '距离分布',
+            name: '该距离人数',
             type: 'bar',
             // radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '小于5km'},
-                {value: dataSet.series.data[1].value, name: '5-20km'},
-                {value: dataSet.series.data[2].value, name: '20-40km'},
-                {value: dataSet.series.data[3].value, name: '40-60km'},
-                {value: dataSet.series.data[4].value, name: '60-80km'},
-                {value: dataSet.series.data[5].value, name: '80-100km'},
-                {value: dataSet.series.data[6].value, name: '100+km'},
-            ],
-            barWidth: 10,
+            data: dataSet.series.data,
+            barWidth: '40%',
             color: '#22BFFF'
         }]
     };
@@ -265,7 +233,7 @@ $(document).ready(function () {
     //使用制定的配置项和数据显示图表
     myChart.setOption(option);
 
-    option.xAxis.axisLabel.show = true;
+    // option.yAxis.axisLabel.show = true;
     myChart = echarts.init(document.getElementById('big-3'));
     myChart.setOption(option);
 });

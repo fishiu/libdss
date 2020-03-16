@@ -122,7 +122,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['讲座', '展览', '演出', '会议', '比赛', '论坛',],
+                data: ['讲座', '展览', '演出',  '比赛', '论坛', '会议'],
                 axisLabel: {
                     fontSize: 9
                 }
@@ -132,14 +132,7 @@ $(document).ready(function () {
             name: '各类活动举行频次',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '讲座'},
-                {value: dataSet.series.data[1].value, name: '展览'},
-                {value: dataSet.series.data[2].value, name: '演出'},
-                {value: dataSet.series.data[3].value, name: '会议'},
-                {value: dataSet.series.data[4].value, name: '比赛'},
-                {value: dataSet.series.data[5].value, name: '论坛'},
-            ],
+            data: dataSet.series.data,
             barWidth: 15,
             color: '#22BFFF'
         }]
@@ -352,6 +345,9 @@ $(document).ready(function () {
         grid: {
             left: 50
         },
+        legend: {
+            data: ['用户到馆频率']
+        },
         tooltip: {
             trigger: 'axis',
             axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -376,7 +372,7 @@ $(document).ready(function () {
                 axisLabel: {
                     fontSize: 6
                 },
-                data: ['2017.10', '2017.11', '2017.12', '2018.1', '2018.2', '2018.3', '2018.4', '2018.5', '2018.6', '2018.7', '2018.8', '2018.9', '2018.10', '2018.11', '2018.12', '2019.1', '2019.2', '2019.3', '2019.4']
+                data: ['2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月']
             }
         ],
         series: [{
@@ -396,6 +392,9 @@ $(document).ready(function () {
                 type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
             }
         },
+        legend: {
+            data: ['用户到馆频率']
+        },
         toolbox: {
             show: true,
             feature: {
@@ -411,7 +410,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['2017年10月', '2017年11月', '2017年12月', '2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月', '2019年1月', '2019年2月', '2019年3月', '2019年4月']
+                data: ['2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月']
             }
         ],
         series: [{
@@ -476,34 +475,14 @@ $(document).ready(function () {
                 axisLabel: {
                     fontSize: 6
                 },
-                data: ['2017.10', '2017.11', '2017.12', '2018.1', '2018.2', '2018.3', '2018.4', '2018.5', '2018.6', '2018.7', '2018.8', '2018.9', '2018.10', '2018.11', '2018.12', '2019.1', '2019.2', '2019.3', '2019.4']
+                data: ['2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月']
             }
         ],
         series: [{
             name: '用户借阅频次时间分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '2017.10'},
-                {value: dataSet.series.data[1].value, name: '2017.11'},
-                {value: dataSet.series.data[2].value, name: '2017.12'},
-                {value: dataSet.series.data[3].value, name: '2018.1'},
-                {value: dataSet.series.data[4].value, name: '2018.2'},
-                {value: dataSet.series.data[5].value, name: '2018.3'},
-                {value: dataSet.series.data[6].value, name: '2018.4'},
-                {value: dataSet.series.data[7].value, name: '2018.5'},
-                {value: dataSet.series.data[8].value, name: '2018.6'},
-                {value: dataSet.series.data[9].value, name: '2018.7'},
-                {value: dataSet.series.data[10].value, name: '2018.8'},
-                {value: dataSet.series.data[11].value, name: '2018.9'},
-                {value: dataSet.series.data[12].value, name: '2018.10'},
-                {value: dataSet.series.data[13].value, name: '2018.11'},
-                {value: dataSet.series.data[14].value, name: '2018.12'},
-                {value: dataSet.series.data[15].value, name: '2019.1'},
-                {value: dataSet.series.data[16].value, name: '2019.2'},
-                {value: dataSet.series.data[17].value, name: '2019.3'},
-                {value: dataSet.series.data[18].value, name: '2019.4'},
-            ],
+            data: dataSet.series.data,
             barWidth: 7,
             color: '#22BFFF'
         }]
@@ -531,34 +510,14 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['2017年10月', '2017年11月', '2017年12月', '2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月', '2019年1月', '2019年2月', '2019年3月', '2019年4月']
+                data: ['2018年1月', '2018年2月', '2018年3月', '2018年4月', '2018年5月', '2018年6月', '2018年7月', '2018年8月', '2018年9月', '2018年10月', '2018年11月', '2018年12月']
             }
         ],
         series: [{
             name: '用户借阅频次时间分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '2017.10'},
-                {value: dataSet.series.data[1].value, name: '2017.11'},
-                {value: dataSet.series.data[2].value, name: '2017.12'},
-                {value: dataSet.series.data[3].value, name: '2018.1'},
-                {value: dataSet.series.data[4].value, name: '2018.2'},
-                {value: dataSet.series.data[5].value, name: '2018.3'},
-                {value: dataSet.series.data[6].value, name: '2018.4'},
-                {value: dataSet.series.data[7].value, name: '2018.5'},
-                {value: dataSet.series.data[8].value, name: '2018.6'},
-                {value: dataSet.series.data[9].value, name: '2018.7'},
-                {value: dataSet.series.data[10].value, name: '2018.8'},
-                {value: dataSet.series.data[11].value, name: '2018.9'},
-                {value: dataSet.series.data[12].value, name: '2018.10'},
-                {value: dataSet.series.data[13].value, name: '2018.11'},
-                {value: dataSet.series.data[14].value, name: '2018.12'},
-                {value: dataSet.series.data[15].value, name: '2019.1'},
-                {value: dataSet.series.data[16].value, name: '2019.2'},
-                {value: dataSet.series.data[17].value, name: '2019.3'},
-                {value: dataSet.series.data[18].value, name: '2019.4'},
-            ],
+            data: dataSet.series.data,
             barWidth: 15,
             color: '#22BFFF'
         }]
@@ -616,7 +575,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['<5', '5-15', '15-25', '25-35', '>35'],
+                data: ['小于5次', '5-15次', '15-25次', '25-35次', '35次以上'],
                 axisLabel: {
                     fontSize: 8
                 }
@@ -626,13 +585,7 @@ $(document).ready(function () {
             name: '用户借阅频次分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '小于5次'},
-                {value: dataSet.series.data[1].value, name: '5-15次'},
-                {value: dataSet.series.data[2].value, name: '15-25次'},
-                {value: dataSet.series.data[3].value, name: '25-35次'},
-                {value: dataSet.series.data[4].value, name: '35次以上'},
-            ],
+            data: dataSet.series.data,
             barWidth: 15,
             color: '#22BFFF'
         }]
@@ -731,7 +684,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['讲座', '展览', '演出', '会议', '比赛', '论坛',],
+                data: ['讲座', '展览', '演出', '比赛', '论坛', '会议'],
                 axisLabel: {
                     fontSize: 9
                 }
@@ -741,14 +694,7 @@ $(document).ready(function () {
             name: '各类活动参与频次',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '讲座'},
-                {value: dataSet.series.data[1].value, name: '展览'},
-                {value: dataSet.series.data[2].value, name: '演出'},
-                {value: dataSet.series.data[3].value, name: '会议'},
-                {value: dataSet.series.data[4].value, name: '比赛'},
-                {value: dataSet.series.data[5].value, name: '论坛'},
-            ],
+            data: dataSet.series.data,
             barWidth: 15,
             color: '#22BFFF'
         }]
@@ -783,14 +729,7 @@ $(document).ready(function () {
             name: '各类活动参与频次',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '讲座'},
-                {value: dataSet.series.data[1].value, name: '展览'},
-                {value: dataSet.series.data[2].value, name: '演出'},
-                {value: dataSet.series.data[3].value, name: '会议'},
-                {value: dataSet.series.data[4].value, name: '比赛'},
-                {value: dataSet.series.data[5].value, name: '论坛'},
-            ],
+            data: dataSet.series.data,
             barWidth: 40,
             color: '#22BFFF'
         }]
@@ -848,7 +787,7 @@ $(document).ready(function () {
         xAxis: [
             {
                 type: 'category',
-                data: ['<4', '4-8', '8-12', '12-16', '16-20', '20-24', '>24'],
+                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '6-7小时', '7-8小时', '8小时以上'],
                 axisLabel: {
                     fontSize: 8
                 }
@@ -858,15 +797,7 @@ $(document).ready(function () {
             name: '用户在馆时间分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '小于4小时'},
-                {value: dataSet.series.data[1].value, name: '4-8小时'},
-                {value: dataSet.series.data[2].value, name: '8-12小时'},
-                {value: dataSet.series.data[3].value, name: '12-16小时'},
-                {value: dataSet.series.data[4].value, name: '16-20小时'},
-                {value: dataSet.series.data[5].value, name: '20-24小时'},
-                {value: dataSet.series.data[6].value, name: '24小时以上'},
-            ],
+            data: dataSet.series.data,
             barWidth: 15,
             color: '#22BFFF'
         }]
@@ -885,31 +816,23 @@ $(document).ready(function () {
             }
         },
         calculable: true,
-        xAxis: [
+        yAxis: [
             {
                 type: 'value'
             }
         ],
-        yAxis: [
+        xAxis: [
             {
                 type: 'category',
-                data: ['小于4小时', '4-8小时', '8-12小时', '12-16小时', '16-20小时', '20-24小时', '24小时以上']
+                data: ['小于1小时', '1-2小时', '2-3小时', '3-4小时', '4-5小时', '5-6小时', '6-7小时', '6-7小时', '7-8小时', '8小时以上'],
             }
         ],
         series: [{
             name: '用户在馆时间分布',
             type: 'bar',
             radius: '60%',
-            data: [
-                {value: dataSet.series.data[0].value, name: '小于4小时'},
-                {value: dataSet.series.data[1].value, name: '4-8小时'},
-                {value: dataSet.series.data[2].value, name: '8-12小时'},
-                {value: dataSet.series.data[3].value, name: '12-16小时'},
-                {value: dataSet.series.data[4].value, name: '16-20小时'},
-                {value: dataSet.series.data[5].value, name: '20-24小时'},
-                {value: dataSet.series.data[6].value, name: '24小时以上'},
-            ],
-            barWidth: 40,
+            data: dataSet.series.data,
+            barWidth: '60%',
             color: '#22BFFF'
         }]
     };
