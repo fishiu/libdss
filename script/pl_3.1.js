@@ -924,7 +924,12 @@ $(document).ready(function () {
         ]
     };
 
+    var dotSize = 14;
     var big_option = {
+        tooltip: {
+            show: true,
+            trigger: 'axis'
+        },
         // 标题
         // 数据和图形的关联
         legend: {
@@ -1018,7 +1023,7 @@ $(document).ready(function () {
                 type: 'scatter',
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: true,
-                symbolSize: 4,
+                symbolSize: dotSize,
                 data: dataSet.data_1,
                 animationDelay: function (idx) {
                     return idx * 5;
@@ -1037,7 +1042,7 @@ $(document).ready(function () {
                 type: 'scatter',
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: false,
-                symbolSize: 4,
+                symbolSize: dotSize,
                 data: dataSet.data_2,
                 animationDelay: function (idx) {
                     return idx * 5;
@@ -1054,7 +1059,7 @@ $(document).ready(function () {
             {
                 name: '会议',
                 type: 'scatter',
-                symbolSize: 4,
+                symbolSize: dotSize,
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: false,
                 data: dataSet.data_3,
@@ -1073,7 +1078,7 @@ $(document).ready(function () {
             {
                 name: '演出',
                 type: 'scatter',
-                symbolSize: 4,
+                symbolSize: dotSize,
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: false,
                 data: dataSet.data_4,
@@ -1092,7 +1097,7 @@ $(document).ready(function () {
             {
                 name: '比赛',
                 type: 'scatter',
-                symbolSize: 4,
+                symbolSize: dotSize,
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: false,
                 data: dataSet.data_5,
@@ -1113,7 +1118,7 @@ $(document).ready(function () {
                 type: 'scatter',
                 // 是否开启鼠标 hover 的提示动画效果
                 hoverAnimation: false,
-                symbolSize: 4,
+                symbolSize: dotSize,
                 data: dataSet.data_6,
                 animationDelay: function (idx) {
                     return idx * 5;

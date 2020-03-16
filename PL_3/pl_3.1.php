@@ -55,7 +55,7 @@
                 <div id="small-2" class="small-chart-body"></div>
             </div>
             <div class="small-chart fl" onclick="choose_chart(3)">
-                <div class="small-chart-title">业务资金投入时间占比</div>
+                <div class="small-chart-title">业务资金投入占比随时间变化</div>
                 <div id="small-3" class="small-chart-body"></div>
             </div>
         </div>
@@ -70,7 +70,7 @@
             <div id="big-2" class="big-chart-body" style="width: 952px;height: 500px;"></div>
         </div>
         <div id="big-chart-3" class="big-chart fl">
-            <div class="big-chart-title">业务资金投入时间占比</div>
+            <div class="big-chart-title">业务资金投入占比随时间变化</div>
             <div id="big-3" class="big-chart-body" style="width: 952px;height: 500px;"></div>
         </div>
 
