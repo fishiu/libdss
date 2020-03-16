@@ -24,11 +24,8 @@
 <div class="main">
     <!--主要内容区域-->
     <div class="content clearfix">
-        <div class="main-image fl">
-            <img src="https://tva1.sinaimg.cn/large/006tNbRwly1gahzszxkt1j318f0u07wi.jpg" height="400px">
-            <h1>重磅：北京大学开通"图个书服"可视化决策支持服务！</h1>
-        </div>
-        <div class="choose-area fr">
+        <div class="welcome-title" style="color: #444444; margin: 10px;letter-spacing: 5px;">欢迎光临图书馆决策支持系统！</div>
+        <div class="choose-area">
             <div class="btn-box">
                 <div class="choose-title"><span class="icon-happy"></span>请选择…</div>
                 <a href="index/learn.php" class="choose-btn">了解现况</a>
