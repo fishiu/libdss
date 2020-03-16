@@ -11,7 +11,7 @@
 
     <!--Javascript-->
     <script src="../script/jquery-3.4.1.js"></script>
-    <script src="../script/echarts.js"></script>
+    <script src="../script/echarts-4.6.0.js"></script>
     <script src="../script/chart-display.js"></script>
     <script src="../script/pl_1.4.js"></script>
 </head>
@@ -63,6 +63,10 @@
                 <div class="small-chart-title">聚类结果可视化展示</div>
                 <div id="small-2" class="small-chart-body"></div>
             </div>
+            <div class="small-chart fl" onclick="choose_chart(3)">
+                <div class="small-chart-title">系列活动影响预测</div>
+                <div id="small-3" class="small-chart-body"></div>
+            </div>
         </div>
 
         <!--详细图表-->
@@ -74,8 +78,11 @@
             <div class="big-chart-title">聚类结果可视化展示</div>
             <div id="big-2" class="big-chart-body" style="width: 952px;height: 550px;"></div>
         </div>
+        <div id="big-chart-3" class="big-chart fl">
+            <div class="big-chart-title">系列活动影响预测</div>
+            <div id="big-3" class="big-chart-body" style="width: 952px;height: 550px;"></div>
+        </div>
     </div>
-
 </div>
 </body>
 </html>
